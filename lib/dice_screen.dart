@@ -38,23 +38,23 @@ class _DiceScreenState extends State<DiceScreen> {
             children: [
           Image(
             image: AssetImage(diceImagee),
-            width: 200,
+            width: 250,
             height: 200,
             fit: BoxFit.cover,
           ),
           MaterialButton(
             onPressed: rollDice,
-            color: Colors.red,
+            color: const Color.fromARGB(255, 25, 2, 1),
             child: Text("roll"),
           ),
               MaterialButton(onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context) =>Scaffold() ));
               },
-              color: Colors.red,
+              color: const Color.fromARGB(255, 112, 30, 24),
                 child: Text("Navigate"),
               )
         ]),
       ),
     );
   }
-}
+} 
